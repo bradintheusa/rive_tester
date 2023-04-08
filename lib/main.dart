@@ -31,12 +31,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
   void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+    setState(() {});
   }
 
   @override
@@ -62,19 +58,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   clipBehavior: Clip.none,
                   children: [
                     Positioned(
-                      top:-100,
-                      child: 
-                    Container(
-                        color: Colors.cyanAccent,
-                        height: 100,
-                        width: 100,
-                        alignment: Alignment.center,
-                        child: const RiveAnimation.asset(
-                          // 'assets/rive/hex_updated_og.riv',
-                          'assets/rive/done.riv',
-                          fit: BoxFit.cover,
-                          alignment: Alignment.topCenter,
-                      )  )),
+                        top: -100,
+                        child: Container(
+                            color: Colors.cyanAccent,
+                            height: 100,
+                            width: 100,
+                            alignment: Alignment.center,
+                            child: const RiveAnimation.asset(
+                              // 'assets/rive/hex_updated_og.riv',
+                              'assets/rive/done.riv',
+                              fit: BoxFit.cover,
+                              alignment: Alignment.topCenter,
+                            ))),
                   ],
                 ))
           ],
